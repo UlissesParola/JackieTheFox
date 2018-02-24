@@ -543,41 +543,11 @@ Prefab:
       propertyPath: GroundCollider
       value: 
       objectReference: {fileID: 937336797}
-    - target: {fileID: 114807386216540976, guid: 573dedc812a576e439c71c7030ef2008,
+    - target: {fileID: 114990968145702542, guid: 573dedc812a576e439c71c7030ef2008,
         type: 2}
-      propertyPath: JumpAudioClip
+      propertyPath: LifeText
       value: 
-      objectReference: {fileID: 8300000, guid: 7c27a13555c6947eab6aca916a0f03ed, type: 3}
-    - target: {fileID: 114807386216540976, guid: 573dedc812a576e439c71c7030ef2008,
-        type: 2}
-      propertyPath: HittedAudioClip
-      value: 
-      objectReference: {fileID: 8300000, guid: 46f921c425e8043f797ad496e6670211, type: 3}
-    - target: {fileID: 114807386216540976, guid: 573dedc812a576e439c71c7030ef2008,
-        type: 2}
-      propertyPath: JumpStartForce
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114807386216540976, guid: 573dedc812a576e439c71c7030ef2008,
-        type: 2}
-      propertyPath: JumpMaxForce
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 114807386216540976, guid: 573dedc812a576e439c71c7030ef2008,
-        type: 2}
-      propertyPath: JumpForce
-      value: 57
-      objectReference: {fileID: 0}
-    - target: {fileID: 114807386216540976, guid: 573dedc812a576e439c71c7030ef2008,
-        type: 2}
-      propertyPath: JumpMaxSpeed
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 114807386216540976, guid: 573dedc812a576e439c71c7030ef2008,
-        type: 2}
-      propertyPath: ForceReductionFactor
-      value: 0.78
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1848671420}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 573dedc812a576e439c71c7030ef2008, type: 2}
   m_IsPrefabParent: 0
@@ -788,24 +758,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: be68aef465aeb894ab40d03a95ef631b, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &1506125072 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1036270013908280, guid: 573dedc812a576e439c71c7030ef2008,
-    type: 2}
-  m_PrefabInternal: {fileID: 977581078}
---- !u!114 &1506125073
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1506125072}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ea97c398622ae7247824a9a040220afc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Lives: 2
-  LifeText: {fileID: 1848671420}
 --- !u!1 &1515314110
 GameObject:
   m_ObjectHideFlags: 0

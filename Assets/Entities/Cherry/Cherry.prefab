@@ -143,7 +143,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreValue: 10
-  GetItemAudioClip: {fileID: 8300000, guid: 49274dd43f2e6411fb6ce33a093a6683, type: 3}
+  GetItemAudioClip: {fileID: 8300000, guid: 9fe330231cc2d4a01aa086aba00b09fd, type: 3}
 --- !u!212 &212074828730341400
 SpriteRenderer:
   m_ObjectHideFlags: 1

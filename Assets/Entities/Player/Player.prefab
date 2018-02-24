@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 61919958432832832}
   - component: {fileID: 95763943786375754}
   - component: {fileID: 114807386216540976}
+  - component: {fileID: 114990968145702542}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -117,8 +118,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd6bdf7d57f4cc145b02eb04460f1a06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  JumpSpeed: 15
+  JumpStartForce: 5
+  JumpMaxSpeed: 12
+  JumpForce: 57
   GroundCollider: {fileID: 0}
+  JumpAudioClip: {fileID: 8300000, guid: 7c27a13555c6947eab6aca916a0f03ed, type: 3}
+  HittedAudioClip: {fileID: 8300000, guid: 58ccec2859d7544f5880b3202cc15dc1, type: 3}
+--- !u!114 &114990968145702542
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1036270013908280}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea97c398622ae7247824a9a040220afc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Lives: 2
+  LifeText: {fileID: 0}
 --- !u!212 &212738138887935898
 SpriteRenderer:
   m_ObjectHideFlags: 1

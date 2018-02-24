@@ -12,6 +12,8 @@ public class EnemySpawner : MonoBehaviour
 	// Use this for initialization
 	void Start () {
 		InvokeRepeating("Spawn", 0 , RepeatTime);
+		float width = Camera.main.orthographicSize * Camera.main.aspect;
+		transform.position = new Vector3(width + 3, transform.position.y);
 	}
 	
 	private void Spawn()
