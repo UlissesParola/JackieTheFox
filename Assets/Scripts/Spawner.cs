@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using UnityEngine;
 
-public class EnemySpawner : MonoBehaviour
+public class Spawner : MonoBehaviour
 {
-	public GameObject[] EnemiesPrefabs;
+	public ObjectPool Pool;
 	public Vector3 Range;
 	public float RepeatTime;
 
@@ -18,8 +18,7 @@ public class EnemySpawner : MonoBehaviour
 	
 	private void Spawn()
 	{
-		int prefabindex = Random.Range(0, EnemiesPrefabs.Length);
-		GameObject enemyPrefab = EnemiesPrefabs[prefabindex];
+		GameObject enemyPrefab = Pool.InstantiatePoolObject(Random.Range(0, (Pool.PoolSize -1)));
 
 		Vector3 spawnPosition = Vector3.Lerp(Range, -Range, Random.value) + this.transform.position;
 
