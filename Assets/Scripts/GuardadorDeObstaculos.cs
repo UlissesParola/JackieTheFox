@@ -5,15 +5,15 @@ using UnityEngine;
 
 public class GuardadorDeObstaculos : MonoBehaviour
 {
-	private ObjectPool _poolDeObstaculos;
+	private Pool _poolDeObstaculos;
 	// Use this for initialization
 	void Start () {
-		_poolDeObstaculos = GameObject.Find("PoolDeObstaculos").GetComponent<ObjectPool>();
+		_poolDeObstaculos = GameObject.Find("PoolDeObstaculos").GetComponent<Pool>();
 	}
 
 	private void OnTriggerEnter2D(Collider2D other)
 	{
 		string nome = other.name.Remove(other.name.IndexOf("("));
-		_poolDeObstaculos.RetainObject(other.gameObject, nome);
+		//_poolDeObstaculos.RetainObject(other.gameObject, nome);
 	}
 }

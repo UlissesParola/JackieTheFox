@@ -13,7 +13,7 @@ public class DestroyOutOfTheScene : MonoBehaviour
 	void Update () {
 		if (transform.position.x < (-_width - 3))
 		{
-			Destroy(this.gameObject);
+			GetComponent<PoolObject>().ReturnToPool();
 		}
 	}
 }
